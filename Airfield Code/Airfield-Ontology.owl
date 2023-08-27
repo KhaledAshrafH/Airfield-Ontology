@@ -1,0 +1,1167 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/5aleda4rf/ontologies/2022/11/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/5aleda4rf/ontologies/2022/11/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/5aleda4rf/ontologies/2022/11/untitled-ontology-10#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-10" IRI="http://www.semanticweb.org/5aleda4rf/ontologies/2022/11/untitled-ontology-10#"/>
+    <Declaration>
+        <Class IRI="#Aircraft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AircraftType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airfield"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroundSurface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Runway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Taxiway"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#AtPosition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CompatibleWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ConsistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HaveAircraft"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LeadTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#aircraft_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airfield_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#airport_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#class"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#compatible_with"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#elevation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#engine_count"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gate_number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#length"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maintenance_status"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#manufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#max_speed"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#passengers_capacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runway_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runway_type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#taxiway_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usage_type"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A320"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A330"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A380"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A_KMN20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A_SKU10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A_STU30"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#A_UWD20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boeing737"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boeing767"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Boeing787"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_A1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_A2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_B1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_B2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#G_C1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R_02E"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R_05C"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R_06D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R_14D"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T_A"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T_B"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T_K"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#T_M"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#almaza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cairo"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aircraft"/>
+        <Class IRI="#Airport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AircraftType"/>
+        <Class IRI="#Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airfield"/>
+        <Class IRI="#Airport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gate"/>
+        <Class IRI="#Airport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroundSurface"/>
+        <Class IRI="#Airport"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Runway"/>
+        <Class IRI="#GroundSurface"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Taxiway"/>
+        <Class IRI="#GroundSurface"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Runway"/>
+        <Class IRI="#Taxiway"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AircraftType"/>
+        <NamedIndividual IRI="#A320"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AircraftType"/>
+        <NamedIndividual IRI="#A330"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AircraftType"/>
+        <NamedIndividual IRI="#A380"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AircraftType"/>
+        <NamedIndividual IRI="#Boeing737"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AircraftType"/>
+        <NamedIndividual IRI="#Boeing767"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AircraftType"/>
+        <NamedIndividual IRI="#Boeing787"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AtPosition"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <NamedIndividual IRI="#R_05C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasType"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <NamedIndividual IRI="#A380"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AtPosition"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <NamedIndividual IRI="#R_05C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasType"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <NamedIndividual IRI="#A330"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AtPosition"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <NamedIndividual IRI="#R_06D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasType"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <NamedIndividual IRI="#Boeing737"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#AtPosition"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <NamedIndividual IRI="#T_K"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasType"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <NamedIndividual IRI="#Boeing787"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <NamedIndividual IRI="#A320"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <NamedIndividual IRI="#A330"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <NamedIndividual IRI="#A380"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_A2"/>
+        <NamedIndividual IRI="#A330"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_A2"/>
+        <NamedIndividual IRI="#A380"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <NamedIndividual IRI="#Boeing737"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <NamedIndividual IRI="#Boeing767"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <NamedIndividual IRI="#Boeing787"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_B2"/>
+        <NamedIndividual IRI="#A320"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <NamedIndividual IRI="#G_C1"/>
+        <NamedIndividual IRI="#Boeing787"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LeadTo"/>
+        <NamedIndividual IRI="#R_02E"/>
+        <NamedIndividual IRI="#T_K"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LeadTo"/>
+        <NamedIndividual IRI="#R_05C"/>
+        <NamedIndividual IRI="#T_M"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LeadTo"/>
+        <NamedIndividual IRI="#R_06D"/>
+        <NamedIndividual IRI="#T_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LeadTo"/>
+        <NamedIndividual IRI="#R_14D"/>
+        <NamedIndividual IRI="#T_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#almaza"/>
+        <NamedIndividual IRI="#G_A1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#almaza"/>
+        <NamedIndividual IRI="#G_A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#almaza"/>
+        <NamedIndividual IRI="#R_05C"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#almaza"/>
+        <NamedIndividual IRI="#R_14D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#almaza"/>
+        <NamedIndividual IRI="#T_A"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#almaza"/>
+        <NamedIndividual IRI="#T_M"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#cairo"/>
+        <NamedIndividual IRI="#G_B1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#cairo"/>
+        <NamedIndividual IRI="#G_B2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#cairo"/>
+        <NamedIndividual IRI="#G_C1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#cairo"/>
+        <NamedIndividual IRI="#R_02E"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#cairo"/>
+        <NamedIndividual IRI="#R_06D"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#cairo"/>
+        <NamedIndividual IRI="#T_B"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <NamedIndividual IRI="#cairo"/>
+        <NamedIndividual IRI="#T_K"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_id"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <Literal>KMN20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <Literal>Wide</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#engine_count"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <Literal>AirBus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passengers_capacity"/>
+        <NamedIndividual IRI="#A_KMN20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_id"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <Literal>KMN20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <Literal>Wide</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#engine_count"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <Literal>AirBus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passengers_capacity"/>
+        <NamedIndividual IRI="#A_SKU10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_id"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <Literal>STU30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <Literal>Narrow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#engine_count"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <Literal>Boeing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passengers_capacity"/>
+        <NamedIndividual IRI="#A_STU30"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#aircraft_id"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <Literal>UWD20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#class"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <Literal>Narrow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#engine_count"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#manufacturer"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <Literal>Boeing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#max_speed"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#passengers_capacity"/>
+        <NamedIndividual IRI="#A_UWD20"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <Literal>A320</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <Literal>A330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <Literal>A380</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#G_A1"/>
+        <Literal>A1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#G_A2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_A2"/>
+        <Literal>A330</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_A2"/>
+        <Literal>A380</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#G_A2"/>
+        <Literal>A2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <Literal>Boeing737</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <Literal>Boeing767</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <Literal>Boeing787</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#G_B1"/>
+        <Literal>B1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#G_B2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_B2"/>
+        <Literal>A320</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#G_B2"/>
+        <Literal>B2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#capacity"/>
+        <NamedIndividual IRI="#G_C1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#compatible_with"/>
+        <NamedIndividual IRI="#G_C1"/>
+        <Literal>Boeing787</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#gate_number"/>
+        <NamedIndividual IRI="#G_C1"/>
+        <Literal>C1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#R_02E"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_name"/>
+        <NamedIndividual IRI="#R_02E"/>
+        <Literal>02E</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_type"/>
+        <NamedIndividual IRI="#R_02E"/>
+        <Literal>Asphalt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#R_05C"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_name"/>
+        <NamedIndividual IRI="#R_05C"/>
+        <Literal>05C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_type"/>
+        <NamedIndividual IRI="#R_05C"/>
+        <Literal>Grass</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#R_06D"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_name"/>
+        <NamedIndividual IRI="#R_06D"/>
+        <Literal>06D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_type"/>
+        <NamedIndividual IRI="#R_06D"/>
+        <Literal>Asphalt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#length"/>
+        <NamedIndividual IRI="#R_14D"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_name"/>
+        <NamedIndividual IRI="#R_14D"/>
+        <Literal>14D</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#runway_type"/>
+        <NamedIndividual IRI="#R_14D"/>
+        <Literal>Asphalt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maintenance_status"/>
+        <NamedIndividual IRI="#T_A"/>
+        <Literal>Open</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taxiway_name"/>
+        <NamedIndividual IRI="#T_A"/>
+        <Literal>A</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maintenance_status"/>
+        <NamedIndividual IRI="#T_B"/>
+        <Literal>Locked</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taxiway_name"/>
+        <NamedIndividual IRI="#T_B"/>
+        <Literal>B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maintenance_status"/>
+        <NamedIndividual IRI="#T_K"/>
+        <Literal>Open</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taxiway_name"/>
+        <NamedIndividual IRI="#T_K"/>
+        <Literal>K</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#maintenance_status"/>
+        <NamedIndividual IRI="#T_M"/>
+        <Literal>Locked</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#taxiway_name"/>
+        <NamedIndividual IRI="#T_M"/>
+        <Literal>M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airfield_id"/>
+        <NamedIndividual IRI="#almaza"/>
+        <Literal>HELA</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#almaza"/>
+        <Literal>Almaza Airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#elevation"/>
+        <NamedIndividual IRI="#almaza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#usage_type"/>
+        <NamedIndividual IRI="#almaza"/>
+        <Literal>Military</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airfield_id"/>
+        <NamedIndividual IRI="#cairo"/>
+        <Literal>CAI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#airport_name"/>
+        <NamedIndividual IRI="#cairo"/>
+        <Literal>Cairo International Airport</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#elevation"/>
+        <NamedIndividual IRI="#cairo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#usage_type"/>
+        <NamedIndividual IRI="#cairo"/>
+        <Literal>Civilian</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#AtPosition"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HaveAircraft"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#LeadTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#AtPosition"/>
+        <ObjectProperty IRI="#HaveAircraft"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#AtPosition"/>
+        <Class IRI="#Aircraft"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <Class IRI="#Gate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <Class IRI="#Airfield"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasType"/>
+        <Class IRI="#Aircraft"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HaveAircraft"/>
+        <Class IRI="#GroundSurface"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LeadTo"/>
+        <Class IRI="#Runway"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LeadTo"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#LeadTo"/>
+            <Class IRI="#Taxiway"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Airfield"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#AtPosition"/>
+        <Class IRI="#GroundSurface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#CompatibleWith"/>
+        <Class IRI="#AircraftType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <Class IRI="#Gate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <Class IRI="#GroundSurface"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasType"/>
+        <Class IRI="#AircraftType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HaveAircraft"/>
+        <Class IRI="#Aircraft"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LeadTo"/>
+        <Class IRI="#Taxiway"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#Gate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <Class IRI="#GroundSurface"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#aircraft_id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#airfield_id"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#airport_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#capacity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#class"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#compatible_with"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#elevation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#engine_count"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#gate_number"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#length"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#maintenance_status"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#manufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#max_speed"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#passengers_capacity"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#runway_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#runway_type"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#taxiway_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#usage_type"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#aircraft_id"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airfield_id"/>
+        <Class IRI="#Airfield"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#airport_name"/>
+        <Class IRI="#Airport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#capacity"/>
+        <Class IRI="#Gate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#class"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#class"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#class"/>
+                <Literal>Narrow</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#class"/>
+                <Literal>Wide</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#compatible_with"/>
+        <Class IRI="#Gate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#elevation"/>
+        <Class IRI="#Airfield"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#engine_count"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gate_number"/>
+        <Class IRI="#Gate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#length"/>
+        <Class IRI="#Runway"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maintenance_status"/>
+        <Class IRI="#Taxiway"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maintenance_status"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#maintenance_status"/>
+                <Literal>Locked</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#maintenance_status"/>
+                <Literal>Open</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#manufacturer"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#max_speed"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#passengers_capacity"/>
+        <Class IRI="#Aircraft"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#runway_name"/>
+        <Class IRI="#Runway"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#runway_type"/>
+        <Class IRI="#Runway"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#runway_type"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#runway_type"/>
+                <Literal>Asphalt</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#runway_type"/>
+                <Literal>Grass</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#taxiway_name"/>
+        <Class IRI="#Taxiway"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usage_type"/>
+        <Class IRI="#Airfield"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usage_type"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#usage_type"/>
+                <Literal>Charter</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#usage_type"/>
+                <Literal>Civilian</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#usage_type"/>
+                <Literal>Military</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#aircraft_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airfield_id"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:string"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxLength">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#airport_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#capacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#class"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#compatible_with"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#elevation"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#engine_count"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gate_number"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#length"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maintenance_status"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#manufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#max_speed"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#passengers_capacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#runway_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#runway_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#taxiway_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#usage_type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <HasKey>
+        <Class IRI="#Aircraft"/>
+        <DataProperty IRI="#aircraft_id"/>
+    </HasKey>
+    <HasKey>
+        <Class IRI="#Airfield"/>
+        <DataProperty IRI="#airfield_id"/>
+    </HasKey>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
